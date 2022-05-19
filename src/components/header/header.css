@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.header-container {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 100;
+    background-color: #dad7cd;
+    background-color: #081c15;
+    background-color: #0b090a;
+}
+
+.nav-list {
+  
+    list-style-type: none;
+    margin: 0;
+    padding: .5rem;
+    margin-right: 20px;
+    display: flex;
+    place-content: end;
+}
+
+li {
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    display: inline;
+    padding: 1.5% 2% 0 5%;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
