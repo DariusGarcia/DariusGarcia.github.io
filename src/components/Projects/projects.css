@@ -1,0 +1,31 @@
+.projects-container-component {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.projects-container {
+    padding: 10rem 0 0 9.5rem;   
+    color: #84a98c;
+    letter-spacing: .1em;
+    cursor: text;
+}
+
+.about-me {
+    
+    padding: 0 0 0 9.5rem;   
+    color: #84a98c;
+    letter-spacing: .1em;
+    cursor: text;
+    }
+
+.here-are-some-of-my-projects {
+    color: #ffffff ;
+    padding: 2rem 0 0 9.5rem;
+    font-size: 1.2rem;
+    word-spacing: 0.25rem;
+    letter-spacing: 1px;
+    cursor: text;
+}

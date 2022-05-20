@@ -1,41 +1,22 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
-.about-container {
-    width: 100%;
+.about-container-component {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     position: relative;
 }
 
-#hey {
-    padding: 15rem 0 0 10rem;   
-    color: #84a98c;
-    letter-spacing: .1em;
-    cursor: text;
-}
-
-
-#name {
-    cursor: text;
-    padding: 0 0 0 9.2rem;
-    width: 790px;
-    font-family: 'Nunito', sans-serif;
-    color: #cad2c5;
-    font-size: 5rem;
-    letter-spacing: .1em; 
+.about-me {
     
+padding: 0 0 0 9.5rem;   
+color: #84a98c;
+letter-spacing: .1em;
+cursor: text;
 }
 
-#name:hover {
-    color: white;
-}
-
-
-#message {
-    color: #84a98c ;
-    padding: 0 0 0 9.5rem;
+.about-me-message {
+    color: #ffffff ;
+    padding: 4rem 0 0 9.5rem;
     font-size: 1.2rem;
     word-spacing: 0.25rem;
     letter-spacing: 1px;
