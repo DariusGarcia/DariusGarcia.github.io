@@ -2,12 +2,12 @@
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0;
     position: relative;
+    padding: 0;
 }
 
 .projects-container {
-    padding: 10rem 0 0 9.5rem;   
+    padding: 10rem 0 0 15rem;   
     color: #84a98c;
     letter-spacing: .1em;
     cursor: text;
@@ -15,7 +15,7 @@
 
 .about-me {
     
-    padding: 0 0 0 9.5rem;   
+    padding: 0 0 0 15rem;   
     color: #84a98c;
     letter-spacing: .1em;
     cursor: text;
@@ -23,9 +23,174 @@
 
 .here-are-some-of-my-projects {
     color: #ffffff ;
-    padding: 2rem 0 0 9.5rem;
-    font-size: 1.2rem;
+    padding: 2rem 0 0 15rem;
+    font-size: 1.1rem;
     word-spacing: 0.25rem;
     letter-spacing: 1px;
     cursor: text;
+}
+
+.card-list {
+    background-color: #354f52;
+    /* background-color: #fc7100; */
+    background-blend-mode: screen;
+    display: flex;
+    padding-top: 6px;
+    overflow-x: scroll;
+    width: 75%;
+    margin-left: 14rem;
+    margin-top: 1rem;
+
+    color: white;
+    font-family: 'Anonymous Pro', monospace;
+
+
+}
+
+.card-list::-webkit-scrollbar {
+    width: 25px;
+    height: 10px;
+
+
+}
+
+/* .card-list::-webkit-scrollbar {
+    width: 25px;
+    height: 10px;
+
+
+}
+
+.card-list::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ff0000, #113dff);
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px rgba(112, 109, 109, 0.25) inset -2px -2px -2px rgba(0, 0, 0, .25);
+}
+
+.card-list::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, #17141d 0, #17141d);
+    background: linear-gradient(45deg, #ff0000, #113dff);
+    width: 25px;
+    height: 10px;
+} */
+
+/* #crypto-gif {
+
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    height: 900px;
+    width: 450px;
+
+} */
+
+
+.card {
+
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    
+    aspect-ratio: 1 / 1.5;
+    width: 25%;
+    /* min-width: 250px; */
+    margin: .9rem;
+    padding: 1.3rem;
+
+    border-radius: 45px;
+    background: #2f3e46;
+    box-shadow: -1rem 0 3rem #354f52;
+
+    transition: .2s;
+
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+
+}
+
+.card:hover~.card {
+    transform: translateX(130px);
+
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+.card h1 {
+    color: #84a98c;
+}
+.message h1:hover {
+    color: #84a98c;
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-header p:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-header h1:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.projects h1:hover {
+    background: linear-gradient(90deg, #ff8a00, #ff008c);
+    text-shadow: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.card:before {
+    content: '';
+    /* background: linear-gradient(-45deg, #00c6ff, #0072ff, #00c6ff, #0072ff); */
+    background: linear-gradient(-45deg, #84a98c, #84a98c);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 28px;
+}
+
+.card:active {
+    color: rgb(255, 255, 255)
+}
+
+.card:hover:before {
+    opacity: 1;
+}
+
+.card:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2f3e46;
+    left: 0;
+    top: 0;
+    border-radius: 28px;
 }

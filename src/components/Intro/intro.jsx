@@ -11,7 +11,7 @@ function Intro() {
             <p className="message">
                 Passionate self starter interested in front-end web development. 
                 Looking to leverage my<br></br>Business Economic analytical skills
-                 to not only be a problem solver, but also a problem finder.
+                to not only be a problem solver, but also a problem finder.
             </p>
         </div>
     )
