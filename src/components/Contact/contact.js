@@ -69,23 +69,25 @@ const handleSubmit = (e) => {
 function Contact() {
 
   return (
-    <form onSubmit={postForm} className="add" >
-      <h1 className="contact-form-h1" >Contact Me</h1>
-      <h5 className="replying-shortly">I will be replying shortly!</h5>
+    <div className="form-bg-shadow">
+      <form onSubmit={postForm} className="add" >
+        <h1 className="contact-form-h1" >Contact Me</h1>
+        <h5 className="replying-shortly">I will be replying shortly!</h5>
 
-      <label className="form-headings" htmlFor="name">Name</label>
-      <input type="text" name='name' placeholder="Name" required />
+        <label className="form-headings" htmlFor="name">Name</label>
+        <input type="text" name='name' placeholder="Name" required />
 
-      <label className="form-headings" >Email</label>
-      <input placeholder="Email" type="text" name='email' required />
+        <label className="form-headings" >Email</label>
+        <input placeholder="Email" type="text" name='email' required />
 
-      <label className="form-headings" >Message</label>
-      <textarea  placeholder="Message" type="text"
-        name='message' required>
-      </textarea>
+        <label className="form-headings" >Message</label>
+        <textarea placeholder="Message" type="text"
+          name='message' required>
+        </textarea>
 
-      <button type="submit">Submit</button>
-    </form>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
 };
 

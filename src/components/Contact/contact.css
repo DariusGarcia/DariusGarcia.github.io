@@ -52,7 +52,8 @@ textarea:focus {
 .add>button {
   padding: 20px;
   border: none;
-  background-color: rgb(10, 27, 124);
+  /* background-color: #41B6E6; */
+  background-color: #1597DD;
   font-weight: 500;
   font-size: 20px;
   border-radius: 3px;
@@ -64,7 +65,7 @@ textarea:focus {
 }
 
 .add>button:hover {
-  background-color: rgb(27, 64, 189);
+  background-color: #41B6E6;
 }
 
 .contact-form-h1 {
@@ -83,3 +84,41 @@ textarea:focus {
   padding: 0 0 15px 0;
   color: white;
 }
+
+
+/* .add:before {
+  content: '';
+  background: linear-gradient(-45deg, #84a98c, #84a98c);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 28px;
+}
+
+.add:active {
+  color: rgb(255, 255, 255)
+}
+
+.add:hover:before {
+  opacity: 1;
+}
+
+.add:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #2f3e46;
+  left: 0;
+  top: 0;
+  border-radius: 28px;
+} */
