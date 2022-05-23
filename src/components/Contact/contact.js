@@ -36,41 +36,29 @@ const findDocs = () => {
 }
 
 // Handling the contact post submission 
-const postForm = (e) => {
-  findDocs();
-  console.log('postForm');
-  e.preventDefault();
-  handleSubmit();
-}
-
-// Adding the new docs to the database 
 const handleSubmit = (e) => {
-  console.log('handle submit');
+  e.preventDefault();
+  findDocs();
 
+  // addContactForm();
   const addContactForm = document.querySelector('.add');
-
-  addContactForm.addEventListener('submit', (e) => {
-    console.log('addContactForm');
-    e.preventDefault();
-    addDoc(colRef, {
-      name: addContactForm.name.value,
-      email: addContactForm.email.value,
-      message: addContactForm.message.value,
-    })
-      .then(() => {
-        addContactForm.reset();
-        console.log('Form submitted');
-      })
+  e.preventDefault();
+  addDoc(colRef, {
+    name: addContactForm.name.value,
+    email: addContactForm.email.value,
+    message: addContactForm.message.value,
   })
+    .then(() => {
+      addContactForm.reset();
+      console.log('Form submitted');
+    })
 }
-
-
 
 function Contact() {
 
   return (
     <div className="form-bg-shadow">
-      <form onSubmit={postForm} className="add" >
+      <form onSubmit={handleSubmit} className="add" >
         <h1 className="contact-form-h1" >Contact Me</h1>
         <h5 className="replying-shortly">I will be replying shortly!</h5>
 
@@ -86,6 +74,7 @@ function Contact() {
         </textarea>
 
         <button type="submit">Submit</button>
+
       </form>
     </div>
   );

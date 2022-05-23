@@ -198,3 +198,8 @@ background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, F
     top: 0;
     border-radius: 28px;
 }
+
+span {
+    background-color: #FFFF00;
+    color: black;
+}

@@ -12,16 +12,16 @@ function About() {
                 </p>
                 <p className='about-me-message'>
                     More specifically, 
-                    I'm interested in becoming a front-end web developer because I found a passion for programming after taking a course 
+                    I'm interested in becoming a front-end web developer. I found a passion for programming while taking a course 
                     in native mobile Android app development here at UC Irvine through a nonprofit organization called CodePath Org. I fell in 
-                    love with having to think outside the box for solving various problems and being able to let my creativity run freely.
-                    Since then, I have found a love for creating elegant apps to which I decided to push myself to start learning other
-                    programming languages and technologies to further increase my capabilities and to see where my creativity takes me.  
+                    love with having to think outside the box for solving various real world problems and being able to let my creativity run freely.
+                    Since then, I have found a love for creating elegant apps to which I decided to push myself to learn other
+                    programming languages and technologies. I'm always trying to further advance my capabilities to see where my creativity leads me.  
                 </p> 
                 <p className='about-me-message'>
-                    I strive to learn new things to apply to my everyday life
-                    because 
-                    I am a film believer that knowledge is power. I am a problem solver that wants to use my skills to help other people and to be able to make 
+                    I strive to keep learning new things to not only apply to my everyday life, but to <u>constantly challenge what's possible</u>. I try to refrain from 
+                    accepting one approach of doing something, but rather seek comfort in embracing the <i>unknown</i> to be able to shed light on new solutions.  
+                    I am a problem solver that wants to utilize my skills to help other people and to be able to make 
                     the world a better place for all!
                 </p>
             </div>
