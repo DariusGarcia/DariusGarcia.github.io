@@ -1,124 +1,85 @@
+.add {
+  aspect-ratio: 1/1;
+  width: 50vw;
+  height: 75vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 15rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  background-color: #2f3e46;
 
-/* 
-.contact-container {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-.contact-header-container {
-width: 66%; 
-margin: auto;
-padding: 8px;
-box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-}
 
-.contact-title {
-    font-size: 2rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.submit-btn {
-    margin-top: 2px;
-    margin-bottom: 2px; 
-    color: white;
-    background-color: blue;
-    width: 100%;
-    padding: 2px;
+.add>h1 {
+  margin-bottom: 30px;
 }
 
-.submit-btn:hover {
-    background-color: rgb(2, 2, 209);
-    transition-property: blue, blue;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 200ms;
-} */
-/* 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: rgb(248, 246, 253);
-  }
-  
-  body,
-  input,
-  textarea,
-  button {
-    font-family: "Inter", sans-serif;
-  } */
-  
-  /* .app {
-    width: 400px;
-    margin: 0 auto;
-    height: 100vh;
-  } */
-  
-  /* Contact.js */
-  .add {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .add > h1 {
-    margin-bottom: 30px;
-  }
-  
-  .add > input,
-  textarea {
-    padding: 20px;
-    border-radius: 3px;
-    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137); */
-    margin-bottom: 20px;
-    border: 1px solid lightgray;
-    /* border: none; */
-    background: #fff;
-    font-size: 16px;
-    color: rgb(0, 0, 32);
-    outline: none;
-  }
-  
-  .add > input:focus,
-  textarea:focus {
-    border: 1px solid rgb(0, 0, 196);
-  }
-  
-  .add > textarea {
-    height: 150px;
-    max-width: 400px;
-    min-height: 100px;
-  }
-  
-  .add > label {
-    padding-bottom: 10px;
-    color: rgb(0, 0, 32);
-    font-weight: bold;
-  }
-  
-  .add > button {
-    padding: 20px;
-    border: none;
-    background-color: rgb(2, 2, 110);
-    font-weight: 500;
-    font-size: 20px;
-    border-radius: 3px;
-    color: #fff;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-    margin-top: 10px;
-  }
-  
-  .add > button:hover {
-    background-color: rgb(0, 0, 196);
-  }
+.add>input,
+textarea {
+  padding: 20px;
+  border-radius: 3px;
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.137); */
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  /* border: none; */
+  background: #fff;
+  font-size: 16px;
+  color: rgb(0, 0, 32);
+  outline: none;
+}
+
+.add>input:focus,
+textarea:focus {
+  border: 1px solid rgb(0, 0, 196);
+}
+
+.add>textarea {
+  height: 150px;
+  max-width: 400px;
+  min-height: 100px;
+}
+
+.add>label {
+  padding-bottom: 10px;
+  color: rgb(0, 0, 32);
+  font-weight: bold;
+}
+
+.add>button {
+  padding: 20px;
+  border: none;
+  background-color: rgb(10, 27, 124);
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+.add>button:hover {
+  background-color: rgb(27, 64, 189);
+}
+
+.contact-form-h1 {
+  /* padding: 0 0 0 15rem;    */
+    color: #84a98c;
+    letter-spacing: .1em;
+    cursor: text;
+    
+}
+
+.form-headings {
+  color: #84a98c !important;
+}
+
+.replying-shortly {
+  padding: 0 0 15px 0;
+  color: white;
+}

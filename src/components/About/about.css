@@ -17,6 +17,7 @@ cursor: text;
 }
 
 .about-me-message {
+    width: 63vw;
     color: #ffffff ;
     padding: 4rem 0 0 15rem;
     font-size: 1.1rem;
