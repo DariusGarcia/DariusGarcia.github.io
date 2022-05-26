@@ -29,7 +29,7 @@ function Projects() {
                     </p>
                 </header>
                 {/* <a href="https://github.com/DariusGarcia/Instapic" target="_blank" id="crypto-gif">
-                    <img src="images/Instapic.gif" alt="Link to Cryptonite project" id="crypto-gif">
+                    <img src={instapic} alt="Link to Cryptonite project" id="crypto-gif"></img>
                 </a> */}
             </article>
 
@@ -41,8 +41,8 @@ function Projects() {
                         app utilizes Twitter REST API.</p>
                 </header>
                 {/* <a href="https://github.com/DariusGarcia/Tweeter" target="_blank" id="crypto-gif">
-                    <img src="images/tweeter.gif" alt="Link to Cryptonite project" id="crypto-gif">
-                </a> */}
+                    <img src={tweeter} alt="Link to Cryptonite project" id="crypto-gif"> </img> */}
+                {/* </a> */}
             </article>
 
             <article className="card">

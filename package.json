@@ -15,9 +15,10 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
-  
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "reac<br></br><br></br>t-scripts test",
     "eject": "react-scripts eject"
@@ -41,7 +42,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "homepage": "https://dariusgarcia.github.io/portfolio"
   }
-  
 }
