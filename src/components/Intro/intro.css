@@ -1,17 +1,19 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 .intro-container {
+    display: flex;
+    flex-direction: column;
     width: 63vw;
     height: 100%;
     margin: 0;
+    margin-bottom: 10px;
     padding: 0;
     position: relative;
 }
 
 #hey {
     padding: 15rem 0 0 15rem;
-    margin-bottom: 2rem;   
+    margin-bottom: 2rem;
     color: #84a98c;
     letter-spacing: .1em;
     cursor: text;
@@ -25,8 +27,8 @@
     font-family: 'Nunito', sans-serif;
     color: #cad2c5;
     font-size: 5rem;
-    letter-spacing: .1em; 
-    
+    letter-spacing: .1em;
+
 }
 
 #name:hover {
@@ -34,10 +36,19 @@
 }
 
 .message {
-    color: #84a98c ;
+    display: flex;
+    flex-wrap: wrap;
+    color: #84a98c;
     padding: 3rem 0 0 15rem;
     font-size: 1.2rem;
     word-spacing: 0.25rem;
     letter-spacing: 1px;
+    min-height: 50vh !important;
     cursor: text;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #00d9e9;
 }

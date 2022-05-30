@@ -1,4 +1,5 @@
 {
+  "homepage": "https://dariusgarcia.github.io/portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -42,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "homepage": "https://dariusgarcia.github.io/portfolio"
+    "gh-pages": "^4.0.0"
+    
   }
 }

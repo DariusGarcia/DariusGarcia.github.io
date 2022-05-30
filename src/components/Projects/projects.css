@@ -1,28 +1,29 @@
 .projects-container-component {
     height: 100%;
-    width: 100%;
+    width: 80vw;
     margin: 1rem 0 0 0 !important;
     position: absolute !important;
     padding: 0 0 0 0;
+    overflow-x: hidden;
 }
 
 .projects-container {
-    padding: 10rem 0 0 15rem;   
+    padding: 10rem 0 0 15rem;
     color: #84a98c;
     letter-spacing: .1em;
     cursor: text;
 }
 
 .about-me {
-    
-    padding: 0 0 0 15rem;   
+
+    padding: 0 0 0 15rem;
     color: #84a98c;
     letter-spacing: .1em;
     cursor: text;
-    }
+}
 
 .here-are-some-of-my-projects {
-    color: #ffffff ;
+    color: #ffffff;
     padding: 2rem 0 0 15rem;
     font-size: 1.1rem;
     word-spacing: 0.25rem;
@@ -40,7 +41,7 @@
     width: 75%;
     margin-left: 14rem;
     margin-top: 1rem;
-
+    height: 10%;
     color: white;
     font-family: 'Anonymous Pro', monospace;
 
@@ -91,13 +92,13 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    
+
     aspect-ratio: 1 / 1.5;
     width: 25%;
     min-width: 250px;
     margin: .9rem;
     padding: 1.3rem;
-
+    height: 50vh;
     border-radius: 45px;
     background: #2f3e46;
     box-shadow: -1rem 0 3rem #354f52;
@@ -123,6 +124,7 @@
 .card h1 {
     color: #84a98c;
 }
+
 .message h1:hover {
     color: #84a98c;
     background: linear-gradient(90deg, #ff8a00, #e52e71);
@@ -134,9 +136,13 @@
 
 .card-header p:hover {
     /* background: linear-gradient(90deg, #ff8a00, #e52e71); */
-    background: #43C6AC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #43C6AC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F8FFAE, #43C6AC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: default;
 
     text-shadow: none;
     background-clip: text;
@@ -145,7 +151,8 @@ background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, F
 }
 
 .card-header h1:hover {
-    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    background: white;
+    cursor: default;
     text-shadow: none;
     background-clip: text;
     -webkit-background-clip: text;
@@ -153,11 +160,12 @@ background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, F
 }
 
 .projects h1:hover {
-    background: linear-gradient(90deg, #ff8a00, #ff008c);
+    background: white;
     text-shadow: none;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
 
@@ -202,4 +210,8 @@ background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, F
 span {
     background-color: #FFFF00;
     color: black;
+}
+
+#crypto-gif {
+    height: 100px;
 }
