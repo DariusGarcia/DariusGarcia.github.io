@@ -8,16 +8,17 @@
   font-family: 'Nunito', sans-serif;
 
 }
+
 html {
   box-sizing: border-box;
 
 }
 
 .body-about {
-  min-height: 50vh;
+  /* min-height: 50vh; */
   background-color: #354f52;
   position: relative;
-  min-height: 95vh;
+  /* min-height: 95vh; */
 
 }
 

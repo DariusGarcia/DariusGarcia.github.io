@@ -1,5 +1,6 @@
 .projects-container-component {
-    position: absolute;
+    position: relative;
+    min-height: 95vh;
 
 }
 
@@ -203,8 +204,12 @@ span {
 
 
 @media (max-width: 415px) {
+
     .card-list {
-        width: 70vw;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+        width: 90vw;
         margin: 2px;
     }
 

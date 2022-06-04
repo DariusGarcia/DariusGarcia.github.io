@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 .intro-container {
+    /* width: 100%; */
     display: flex;
     justify-content: center;
-    align-items: start;
-    place-content: start;
+    /* align-items: start;
+    */
+    /* place-content: start; */
     flex-direction: column;
-    /* width: 90vw; */
-    /* height: 100%; */
     margin: 0;
-    margin-bottom: 10px;
     position: relative;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    /* margin-left: 2rem; */
+    /* margin-right: 2rem; */
 }
 
 #hey {
@@ -60,7 +59,22 @@ a {
 
 
 @media (max-width: 415px) {
+    .intro-container {
+        padding: 1rem;
+    }
+
     .intro-message {
         width: 100%;
+    }
+}
+
+@media (min-width: 416px) {
+    .intro-container {
+        /* display: flex;
+        justify-content: center;
+        align-items: start;
+        place-content: start; */
+        width: 100%;
+        padding: 2rem;
     }
 }

@@ -1,10 +1,12 @@
 .about-container-component {
     display: flex;
+    justify-content: center;
+    place-content: center;
     flex-direction: column;
-    padding: 3rem;
+    /* padding: 3rem; */
     position: relative;
     left: 0;
-    right: 0;
+    min-height: 95vh;
 }
 
 .about-me {
@@ -26,8 +28,19 @@
 }
 
 @media (max-width: 415px) {
+    .about-container-component {
+        padding: 1rem;
+    }
+
     .about-me-message {
         width: 100%;
         font-size: .8rem;
+    }
+}
+
+@media (min-width: 416px) {
+    .about-container-component {
+        width: 100%;
+        padding: 3rem;
     }
 }
