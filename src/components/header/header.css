@@ -3,6 +3,7 @@
 
 .header-container {
     position: fixed;
+    justify-content: start;
     height: 100px;
     width: 100%;
     top: 0;

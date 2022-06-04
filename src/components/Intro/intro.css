@@ -2,18 +2,21 @@
 
 .intro-container {
     display: flex;
+    justify-content: center;
+    align-items: start;
+    place-content: start;
     flex-direction: column;
-    width: 63vw;
-    height: 100%;
+    /* width: 90vw; */
+    /* height: 100%; */
     margin: 0;
     margin-bottom: 10px;
-    padding: 0;
     position: relative;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 #hey {
-    padding: 15rem 0 0 15rem;
-    margin-bottom: 2rem;
+    padding-top: 12rem;
     color: #84a98c;
     letter-spacing: .1em;
     cursor: text;
@@ -22,12 +25,13 @@
 
 #name {
     cursor: text;
-    padding: 0 0 0 14.6rem;
     width: auto;
     font-family: 'Nunito', sans-serif;
     color: #cad2c5;
+    padding: 0;
+    margin: 0;
     font-size: 5rem;
-    letter-spacing: .1em;
+    letter-spacing: .06em;
 
 }
 
@@ -35,11 +39,12 @@
     color: white;
 }
 
-.message {
+.intro-message {
     display: flex;
     flex-wrap: wrap;
+    width: 50%;
     color: #84a98c;
-    padding: 3rem 0 0 15rem;
+    /* padding: 3rem 0 0 15rem; */
     font-size: 1.2rem;
     word-spacing: 0.25rem;
     letter-spacing: 1px;
@@ -51,4 +56,11 @@
 a {
     text-decoration: none;
     color: #00d9e9;
+}
+
+
+@media (max-width: 415px) {
+    .intro-message {
+        width: 100%;
+    }
 }
