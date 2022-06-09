@@ -16,7 +16,7 @@ function Projects() {
           </header>
           <a href="https://dariusgarcia.github.io/BullBear">Link to BullBear</a>
         </article>
-        555
+
         <article className="card">
           <header className="card-header">
             <h1>Instapic</h1>

@@ -1,8 +1,16 @@
+.form-bg-shadow {
+  display: flex;
+  place-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .add {
   /* aspect-ratio: 1/1; */
-  width: 100%;
+  width: 90%;
   height: 75vh;
   display: flex;
+  place-content: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -83,9 +91,18 @@ textarea:focus {
 
 
 @media (max-width: 415px) {
+  .form-bg-shadow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .add {
-    width: 100%;
-    margin: 2px;
+
+    align-items: center;
+    place-content: center;
+    justify-content: center;
+    width: 90%;
     padding: 1rem;
   }
 }
@@ -96,7 +113,7 @@ textarea:focus {
     justify-content: center;
     align-items: center;
     place-content: center;
-    width: 100vw;
+    width: 90%;
     margin: 2px;
     padding: 1rem;
   }

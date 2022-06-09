@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 * {
-  margin: 0, auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -11,15 +11,15 @@
 
 html {
   box-sizing: border-box;
+  background-color: #354f52;
+}
 
+.body {
+  background-color: #354f52;
 }
 
 .body-about {
-  /* min-height: 50vh; */
-  background-color: #354f52;
   position: relative;
-  /* min-height: 95vh; */
-
 }
 
 .App {
