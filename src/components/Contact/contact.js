@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import "./contact.css";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAY6X_8lixE958LjMwm04ArXSDy98J9YaY",
-  authDomain: "portfolio-ad26d.firebaseapp.com",
-  projectId: "portfolio-ad26d",
-  storageBucket: "portfolio-ad26d.appspot.com",
-  messagingSenderId: "531058865360",
-  appId: "1:531058865360:web:44554b19dd7d63e5dd9ad5",
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
 };
 
 // Initializing the Firebase Firestore database
