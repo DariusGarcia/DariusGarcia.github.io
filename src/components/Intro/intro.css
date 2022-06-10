@@ -11,7 +11,8 @@
 
 #hey {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
+    place-items: flex-start;
     align-items: center;
     color: #84a98c;
     letter-spacing: .1em;
