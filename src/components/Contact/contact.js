@@ -54,7 +54,7 @@ const handleSubmit = (e) => {
 
 function Contact() {
   return (
-    <div className="form-bg-shadow">
+    <div className="form-container">
       <form onSubmit={handleSubmit} className="add">
         <h1 className="contact-form-h1">Contact Me</h1>
         {/* <h5 className="replying-shortly">I will be replying shortly!</h5> */}

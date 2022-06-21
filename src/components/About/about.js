@@ -11,16 +11,14 @@ function About() {
         </p>
         <p className="about-me-message">
           More specifically, I'm interested in becoming a front-end web
-          developer. I found a passion for programming while taking a course in
-          native mobile Android app development here at UC Irvine through a
-          nonprofit organization called CodePath Org. I fell in love with having
-          to think outside the box for solving various real world problems and
-          being able to let my creativity run freely. Since then, I have found a
-          love for creating elegant apps to which I decided to push myself to
-          learn other programming languages and technologies. I'm always trying
-          to further advance my capabilities to see where my creativity leads
-          me.
+          developer. I found a passion for programming by having to think
+          outside the box for solving various real world problems and being able
+          to let my creativity run freely. Since then, I have found a love for
+          creating elegant apps to which I decided to push myself to learn other
+          programming languages and technologies. I'm always trying to further
+          advance my capabilities to see where my creativity leads me.
         </p>
+        <br></br>
         <p className="about-me-message">
           I strive to keep learning new things to not only apply to my everyday
           life, but to <u>constantly challenge what's possible</u>. I try to

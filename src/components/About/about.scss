@@ -1,12 +1,14 @@
+
+
 .about-container-component {
     display: flex;
     justify-content: center;
     place-content: center;
+    align-items: center;
     flex-direction: column;
     /* padding: 3rem; */
     position: relative;
-    left: 0;
-    min-height: 95vh;
+    min-height: 60vh;
 }
 
 .about-me {
@@ -31,6 +33,7 @@
     .about-container-component {
         padding: 1rem;
         height: 10vh;
+        margin-bottom: 8rem;
     }
 
     .about-me-message {

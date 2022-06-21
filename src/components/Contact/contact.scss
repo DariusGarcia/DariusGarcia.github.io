@@ -1,4 +1,4 @@
-.form-bg-shadow {
+.form-container {
   display: flex;
   place-content: center;
   justify-content: center;
@@ -7,7 +7,7 @@
 
 .add {
   /* aspect-ratio: 1/1; */
-  width: 90%;
+  width: 50%;
   height: 75vh;
   display: flex;
   place-content: center;
@@ -91,7 +91,7 @@ textarea:focus {
 
 
 @media (max-width: 415px) {
-  .form-bg-shadow {
+  .form-container {
     display: flex;
     align-items: center;
     justify-content: center;

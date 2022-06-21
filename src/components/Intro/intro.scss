@@ -6,7 +6,7 @@
     align-items: center;
     place-items: center;
     position: relative;
-    min-height: 80vh;
+    min-height: 60vh;
 }
 
 #hey {
@@ -60,18 +60,18 @@ a {
     .intro-container {
         position: relative;
         height: 10vh;
-        width: 95vw;
+        width: 95%;
         margin: 1rem;
         align-items: center;
         place-items: center;
     }
 
     #name {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .intro-message {
-        width: 100%;
+        width: 90%;
         font-size: .9rem;
     }
 }
