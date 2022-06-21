@@ -1,5 +1,5 @@
 import React from "react";
-import "./contact.css";
+import "./contact.scss";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
 
@@ -49,6 +49,7 @@ const handleSubmit = (e) => {
     console.log("Form submitted");
   });
   alert("Message submitted! Darius will be contacting you back shortly.");
+  console.error("Form not submitted");
 };
 
 function Contact() {
