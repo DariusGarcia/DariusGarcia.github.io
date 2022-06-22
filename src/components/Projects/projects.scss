@@ -4,15 +4,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto
 
 }
 
 .projects-title {
     color: #84a98c;
-    display: flex;
-    justify-content: start;
-    align-items: center;
     letter-spacing: .1em;
     cursor: default;
 }
@@ -21,7 +17,6 @@
     background-color: #354f52;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    justify-content: space-evenly;
     color: white;
     padding-top: 1rem;
     gap: 1rem;
@@ -124,10 +119,10 @@ span {
 }
 
 @media (max-width: 1200px) {
-
     .card-list {
+        width: 90%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         margin-bottom: 5rem;
 
         // grid-template-columns: 150px 150px 150px;

@@ -9,6 +9,7 @@ function About() {
           I am a senior Business Economics student at UC Irvine. I am a
           self-starter that is driven to uncover the "why" in how things work.
         </p>
+        <br></br>
         <p className="about-me-message">
           More specifically, I'm interested in becoming a front-end web
           developer. I found a passion for programming by having to think

@@ -29,10 +29,18 @@
     cursor: text;
 }
 
+@media (max-width: 428px) {
+    .about-me {
+        margin-bottom: 1rem;
+    }
+    .about-me-message {
+        width: 100%;
+        font-size: .9rem;
+    }
+}
 @media (max-width: 415px) {
     .about-container-component {
         padding: 1rem;
-        // height: 10vh;
         margin-bottom: 8rem;
     }
 

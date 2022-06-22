@@ -65,6 +65,15 @@ a {
 }
 
 
+@media (max-width: 428px) {
+    #name {
+        font-size: 4rem;
+    }
+    .intro-message {
+        width: 40vw;
+    }
+}
+
 @media (max-width: 585px) {
     #name {
         font-size: 4rem;
@@ -73,6 +82,24 @@ a {
         width: 40vw;
     }
 }
+
+@media (max-width: 428px) {
+    .intro-container {
+        position: relative;
+        height: 10vh;
+        align-items: center;
+        place-items: center;
+    }
+
+    #name {
+        font-size: 2.5rem;
+    }
+
+    .intro-message {
+        width: 90%;
+    }
+}
+
 @media (max-width: 415px) {
     .intro-container {
         position: relative;
