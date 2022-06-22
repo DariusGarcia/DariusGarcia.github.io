@@ -17,6 +17,7 @@
     background-color: #354f52;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: space-evenly;
     color: white;
     padding-top: 1rem;
     gap: 1rem;
@@ -118,12 +119,18 @@ span {
     height: 100px;
 }
 
+@media (min-width: 1201px) {
+    .projects-container-component {
+        margin-bottom: 8rem;
+    }
+}
 @media (max-width: 1200px) {
     .card-list {
         width: 90%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        margin-bottom: 5rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-content: space-evenly;
+        margin-bottom: 8rem;
 
         // grid-template-columns: 150px 150px 150px;
         
@@ -140,6 +147,7 @@ span {
     .card-list {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
     }
 
     .card {
