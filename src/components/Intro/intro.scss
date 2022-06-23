@@ -1,6 +1,7 @@
 @use '../../utils';
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+// Resuable mixin for flex-layout (centered)
 @mixin flex-layout() {
     display: flex;
     align-items: center;
@@ -12,22 +13,13 @@
     @include flex-layout();
     flex-direction: column;
     min-height: 60vh;
+    width: 100%;
     cursor: default;
-}
-.intro-message {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    min-height: 50vh !important;
-    font-size: 1.2rem;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    color: rgb(161, 161, 161);
 }
 
 .intro-header {
-    
+@include flex-layout();
+flex-direction: column;
     place-items: center;
     // align-items: flex-start;
     // justify-content: flex-start;
@@ -36,9 +28,10 @@
 #hey {
     color: utils.$primary-color;
     letter-spacing: .1em;
+    margin-left: 4px;
     margin-top: 12rem;
     display: flex;
-    align-self: center;
+    align-self: flex-start;
 }
 
 
@@ -57,53 +50,29 @@
     color: white;
 }
 
+.intro-message {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-left: 4px;
+    min-height: 50vh !important;
+    font-size: 1.2rem;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    color: rgb(161, 161, 161);
+}
+
+
 
 a {
     text-decoration: none;
     color: utils.$links;
 }
 
-@media (min-width: 500px) and (max-width: 999px) {
-    .intro-header {
-        width: 70%;
-    }
-}
-@media (min-width: 1000px) {
-    .intro-header {
-        width: 70%;
-    }
-}
-
-@media (max-width: 500px) {
-    .intro-header {
-        
-        // width: 80%;
-    }
-    #hey {
-        margin-left: 1rem;
-    }
-    #name{
-        margin-left: 1rem;
-        font-size: 3rem;
-    }
-    
-    
-}
-
-@media (max-width: 428px) {
-    .intro-container {
-        margin-top: 12rem;
-    }
-    #name {
-        display: flex;
-        align-self: center;
-        justify-content: space-between;
-        font-size: 4rem;
-    }
-    .intro-message {
-        width: 40vw;
-    }
-    
+// ----------------------------------------------------------------
+// Media queries for mobile devices
+// ----------------------------------------------------------------
 
 @media (min-width: 1024px) {
     .intro-header {
@@ -113,36 +82,63 @@ a {
         width: 70%;
     }
 }
-}
 
-@media (max-width: 585px) {
-    
-    #name {
-        font-size: 4rem;
-        color: white;
+
+@media (min-width: 500px) and (max-width: 999px) {
+    .intro-header {
+        width: 70%;
     }
     .intro-message {
-        width: 40vw;
+        width: 100%;
+    }
+}
+@media (min-width: 1000px) {
+    .intro-header {
+        width: 70%;
+    }
+}
+
+@media (max-width: 663px) {
+    .intro-header {
+        @include flex-layout();
+        align-self: center !important;
         margin-left: 1rem;
     }
+    #hey {
+        margin-left: 4px;
+    }
+    
+    #name {
+        font-size: 3rem;
+        color: white;
+        ;
+    }
+    .intro-message {
+        width: 90%;
+        margin-left: 4px;
+    }
+}
+
+@media (max-width: 428px) {
+    .intro-container {
+        margin-top: 5rem;
+    }
+ 
 }
 
 @media (max-width: 415px) {
     .intro-container {
         position: relative;
         height: 10vh;
-        // align-items: center;
-        
-        // place-items: center;
     }
     .intro {
-        margin-top: 20rem;
+        // margin-top: 12rem;
     }
     #hey {
         display: flex ;
         justify-items: flex-start;
         align-self: flex-start ;
-        margin-left: 1rem;
+        margin-left: 1.1rem;
 }
     #name {
         font-size: 3rem;
@@ -154,6 +150,7 @@ a {
     .intro-message {
         width: 90%;
         font-size: 1rem;
+        margin-left: 1.1rem;
     }
 }
 
