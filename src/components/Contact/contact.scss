@@ -1,25 +1,25 @@
-.form-container {
+@use '../../utils';
+
+@mixin flex-layout() {
   display: flex;
-  place-content: center;
-  justify-content: center;
   align-items: center;
+  place-content: center;
+  position: relative;
+}
+
+.form-container {
+  @include flex-layout();
   margin-bottom: 5rem;
 }
 
 .add {
-  /* aspect-ratio: 1/1; */
+  @include flex-layout();
+  flex-direction: column;
   width: 50%;
   height: 75vh;
-  display: flex;
-  place-content: center;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   border-radius: 45px;
-  background-color: #2f3e46;
+  background-color: utils.$dark-grey;
   
-
-
 }
 
 .add>h1 {
@@ -28,14 +28,14 @@
 
 .add>input,
 textarea {
-  padding: 20px;
-  border-radius: 3px;
-  margin-bottom: 20px;
+  outline: none;
   border: 1px solid lightgray;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
   background: #fff;
   font-size: 16px;
   color: rgb(0, 0, 32);
-  outline: none;
   cursor: text;
 }
 
@@ -57,18 +57,16 @@ textarea:focus {
 }
 
 .add>button {
-  padding: 20px;
   border: none;
-  /* background-color: #41B6E6; */
-  background-color: #1597DD;
-  font-weight: 500;
-  font-size: 20px;
-  border-radius: 3px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
+  padding: 20px;
   margin-top: 10px;
   border-radius: 15px;
+  background-color: #1597DD;
+  transition: 0.2s ease-in-out;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .add>button:hover {
@@ -77,13 +75,13 @@ textarea:focus {
 
 .contact-form-h1 {
   /* padding: 0 0 0 15rem;    */
-  color: #84a98c;
+  color: utils.$primary-color;
   letter-spacing: .1em;
 
 }
 
 .form-headings {
-  color: #84a98c !important;
+  color: utils.$primary-color !important;
 }
 
 .replying-shortly {
@@ -94,27 +92,20 @@ textarea:focus {
 
 @media (max-width: 415px) {
   .form-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-layout();
   }
 
   .add {
 
-    align-items: center;
-    place-content: center;
-    justify-content: center;
+    @include flex-layout();
+    padding: 1rem; 
     width: 90%;
-    padding: 1rem;
   }
 }
 
 @media (min-width:415px) and (max-width: 1025px) {
   .add {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    place-content: center;
+    @include flex-layout();
     width: 90%;
     margin: 2px;
     padding: 1rem;

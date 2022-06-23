@@ -1,39 +1,43 @@
-.projects-container-component {
-    min-height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@use '../../utils';
 
+@mixin flex-layout() {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    position: relative;
+}
+
+.projects-container-component {
+    @include flex-layout();
+    flex-direction: column;
+    min-height: 95vh;
 }
 
 .projects-title {
-    color: #84a98c;
+    color: utils.$primary-color;
     letter-spacing: .1em;
     cursor: default;
 }
 
 .card-list {
-    background-color: #354f52;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-content: space-evenly;
-    color: white;
+    width: 80%;
     padding-top: 1rem;
     gap: 1rem;
-    width: 80%;
+    background-color: utils.$secondary-color;
+    color: white;
 }
 
 .card {
-    display: flex;
-    position: relative;
+    @include flex-layout();
     flex-direction: column;
     min-width: 350px;
     min-height: 250px;
     padding: 1.3rem;
-    place-content: center;
     border-radius: 45px;
-    background: #2f3e46;
+    background: utils.$dark-grey;
 }
 
 .card:nth-child(3n) {
@@ -55,12 +59,12 @@
 }
 
 .card h1 {
-    color: #84a98c;
+    color: utils.$primary-color;
     cursor: default;
 }
 
 .message h1:hover {
-    color: #84a98c;
+    color: utils.$primary-color;
     background: linear-gradient(90deg, #ff8a00, #e52e71);
     text-shadow: none;
     background-clip: text;
@@ -68,14 +72,13 @@
     -webkit-text-fill-color: transparent;
 }
 
-
 .card-header h1:hover {
     background: white;
-    cursor: default;
     text-shadow: none;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: default;
 }
 
 .projects h1:hover {
@@ -84,11 +87,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
 }
-
-
-
 
 .card:active {
     color: rgb(255, 255, 255)
@@ -99,15 +98,15 @@
 }
 
 .card:after {
-    z-index: -1;
-    content: '';
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #2f3e46;
     left: 0;
     top: 0;
+    z-index: -1;
     border-radius: 28px;
+    background-color: utils.$dark-grey;
+    content: '';
 }
 
 span {
@@ -126,21 +125,17 @@ span {
 }
 @media (max-width: 1200px) {
     .card-list {
-        width: 90%;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         justify-content: space-evenly;
+        width: 90%;
         margin-bottom: 8rem;
-
-        // grid-template-columns: 150px 150px 150px;
-        
     }
 }
 
 @media (max-width: 415px) {
     .projects-container-component {
         width: 95vw;
-
         margin-bottom: 8rem;
     }
 
@@ -154,5 +149,4 @@ span {
         font-size: .9rem;
         min-width: 1rem;
     }
-
 }

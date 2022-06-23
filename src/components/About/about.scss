@@ -1,13 +1,15 @@
+@use '../../utils';
 
+@mixin flex-layout() {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    position: relative;
+}
 
 .about-container-component {
-    display: flex;
-    justify-content: center;
-    place-content: center;
-    align-items: center;
+   @include flex-layout();
     flex-direction: column;
-    /* padding: 3rem; */
-    position: relative;
     min-height: 60vh;
     cursor: default;
 }
@@ -16,17 +18,17 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    color: #84a98c;
-    letter-spacing: .1em;
     margin-bottom: 2rem;
+    letter-spacing: .1em;
+    color: utils.$primary-color;
 }
 
 .about-me-message {
     width: 63vw;
-    color: #ffffff;
     font-size: 1.1rem;
     word-spacing: 0.25rem;
     letter-spacing: 1px;
+    color: #ffffff;
 }
 
 @media (max-width: 428px) {
@@ -55,6 +57,5 @@
         width: 100%;
         padding: 3rem;
         margin-bottom: 8rem;
-        /* min-height: 50vh; */
     }
 }

@@ -1,4 +1,7 @@
+@use 'utils';
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
 
 * {
   margin: 0;
@@ -6,17 +9,17 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Nunito', sans-serif;
-  cursor: default;
+  
 
 }
 
 html {
   box-sizing: border-box;
-  background-color: #354f52;
+  background-color: utils.$secondary-color;
 }
 
 .body {
-  background-color: #354f52;
+  background-color: utils.$secondary-color;
   
 }
 
@@ -25,7 +28,7 @@ html {
 }
 
 .App {
-  background-color: #354f52;
+  background-color: utils.$secondary-color;
 }
 
 .App-logo {
@@ -40,12 +43,12 @@ html {
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #282c34;
   font-size: calc(10px + 2vmin);
   color: white;
 }

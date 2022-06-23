@@ -1,15 +1,19 @@
+@use '../../utils';
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-.intro-container {
+@mixin flex-layout() {
     display: flex;
-    // align-items: center;
-    place-items: center;
+    align-items: center;
+    place-content: center;
     position: relative;
+}
+
+.intro-container {
+    @include flex-layout();
     flex-direction: column;
     min-height: 60vh;
     cursor: default;
 
-    
 }
 
 .intro {
@@ -20,11 +24,7 @@
 }
 
 #hey {
-    display: flex;
-    justify-content: flex-start;
-    place-items: flex-start;
-    align-items: center;
-    color: #84a98c;
+    color: utils.$primary-color;
     letter-spacing: .1em;
     margin-top: 12rem;
 }
@@ -32,8 +32,8 @@
 
 #name {
     width: auto;
-    font-family: 'Nunito', sans-serif;
-    color: #cad2c5;
+    font-family: utils.$font-family;
+    color: utils.$name;
     padding: 0;
     margin: 0;
     font-size: 4.5rem;
@@ -47,20 +47,20 @@
 
 
 .intro-message {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-    color: #84a98c;
+    min-height: 50vh !important;
+    color: utils.$primary-color;
     font-size: 1.2rem;
     word-spacing: 0.25rem;
     letter-spacing: 1px;
-    min-height: 50vh !important;
-    position: relative;
 }
 
 a {
     text-decoration: none;
-    color: #00d9e9;
+    color: utils.$links;
 }
 
 
