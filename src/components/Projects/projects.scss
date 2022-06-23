@@ -11,6 +11,7 @@
     @include flex-layout();
     flex-direction: column;
     min-height: 95vh;
+    
 }
 
 .projects-title {
@@ -28,6 +29,7 @@
     gap: 1rem;
     background-color: utils.$secondary-color;
     color: white;
+    
 }
 
 .card {
@@ -38,16 +40,31 @@
     padding: 1.3rem;
     border-radius: 45px;
     background: utils.$dark-grey;
+    box-shadow: 10px 10px 15px rgb(9, 10, 17);
+    border: 1px solid black;
 }
 
 .card:nth-child(3n) {
     line-break: auto;
 }
 
-.card:hover {}
+.card:hover {
+    outline: utils.$primary-color;
+}
 
 .card:hover~.card {}
 
+.projects-body-text {
+    margin-top: 1rem;
+}
+.github-repo-links {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+.card a:hover {
+    color: utils.$links-hover;
+}
 
 .card-header>p {
     cursor: default;
@@ -146,7 +163,7 @@ span {
     }
 
     .card {
-        font-size: .9rem;
+        font-size: 1rem;
         min-width: 1rem;
     }
 }

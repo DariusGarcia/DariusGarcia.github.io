@@ -19,7 +19,6 @@
   height: 75vh;
   border-radius: 45px;
   background-color: utils.$dark-grey;
-  
 }
 
 .add>h1 {
@@ -74,10 +73,8 @@ textarea:focus {
 }
 
 .contact-form-h1 {
-  /* padding: 0 0 0 15rem;    */
   color: utils.$primary-color;
   letter-spacing: .1em;
-
 }
 
 .form-headings {
@@ -89,14 +86,12 @@ textarea:focus {
   color: white;
 }
 
-
 @media (max-width: 415px) {
   .form-container {
     @include flex-layout();
   }
 
   .add {
-
     @include flex-layout();
     padding: 1rem; 
     width: 90%;

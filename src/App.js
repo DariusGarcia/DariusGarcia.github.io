@@ -23,9 +23,6 @@ function App() {
         <Projects />
       </div>
       <div className="body-about">
-        <Socials />
-      </div>
-      <div className="body-about">
         <Contact />
       </div>
     </div>

@@ -1,7 +1,17 @@
+@use '../../utils';
+
+@mixin flex-layout() {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    position: relative;
+}
+
 .socials-container {
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     min-height: 15vh;
-    color: #84a98c;
+    
 }
+

@@ -26,7 +26,6 @@
 .about-me-message {
     width: 63vw;
     font-size: 1.1rem;
-    word-spacing: 0.25rem;
     letter-spacing: 1px;
     color: #ffffff;
 }
@@ -37,7 +36,7 @@
     }
     .about-me-message {
         width: 100%;
-        font-size: .9rem;
+        font-size: 1rem;
     }
 }
 @media (max-width: 415px) {
@@ -48,7 +47,7 @@
 
     .about-me-message {
         width: 100%;
-        font-size: .8rem;
+        font-size: 1rem;
     }
 }
 
