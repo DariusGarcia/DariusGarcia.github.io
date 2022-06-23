@@ -7,6 +7,8 @@
     position: relative;
     flex-direction: column;
     min-height: 60vh;
+    cursor: default;
+
     
 }
 
@@ -25,12 +27,10 @@
     color: #84a98c;
     letter-spacing: .1em;
     margin-top: 12rem;
-    cursor: text;
 }
 
 
 #name {
-    cursor: text;
     width: auto;
     font-family: 'Nunito', sans-serif;
     color: #cad2c5;
@@ -55,7 +55,6 @@
     word-spacing: 0.25rem;
     letter-spacing: 1px;
     min-height: 50vh !important;
-    cursor: text;
     position: relative;
 }
 
@@ -78,9 +77,11 @@ a {
 @media (max-width: 585px) {
     #name {
         font-size: 4rem;
+        color: white;
     }
     .intro-message {
         width: 40vw;
+        
     }
 }
 
@@ -116,6 +117,7 @@ a {
     .intro-message {
         width: 90%;
         font-size: .9rem;
+       
     }
 }
 

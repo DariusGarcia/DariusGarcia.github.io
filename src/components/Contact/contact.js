@@ -1,4 +1,3 @@
-import React from "react";
 import "./contact.scss";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";

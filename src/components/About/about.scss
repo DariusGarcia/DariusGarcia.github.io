@@ -9,6 +9,7 @@
     /* padding: 3rem; */
     position: relative;
     min-height: 60vh;
+    cursor: default;
 }
 
 .about-me {
@@ -17,7 +18,6 @@
     align-items: center;
     color: #84a98c;
     letter-spacing: .1em;
-    cursor: text;
     margin-bottom: 2rem;
 }
 
@@ -27,7 +27,6 @@
     font-size: 1.1rem;
     word-spacing: 0.25rem;
     letter-spacing: 1px;
-    cursor: text;
 }
 
 @media (max-width: 428px) {

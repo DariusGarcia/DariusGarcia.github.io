@@ -1,9 +1,9 @@
 import "./App.scss";
 import Navigation from "./components/navigation/navigation";
-import Intro from "./components/Intro/intro";
-import About from "./components/About/about";
-import Projects from "./components/Projects/projects";
-import Contact from "./components/Contact/contact";
+import Intro from "./components/intro/intro";
+import About from "./components/about/about";
+import Projects from "./components/projects/projects";
+import Contact from "./components/contact/contact";
 // import tweeter from "./tweeter.gif";
 
 function App() {

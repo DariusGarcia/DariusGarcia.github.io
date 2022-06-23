@@ -1,5 +1,6 @@
 import "./navigation.scss";
 import * as Scroll from "react-scroll";
+import { FiHome } from "react-icons/fi";
 
 let scroller = Scroll.scroller;
 let animateScroll = Scroll.animateScroll;
@@ -9,6 +10,7 @@ function Navigation() {
     <nav className="header-container">
       <ul className="nav-list">
         <li
+          className="home-icon"
           onClick={() =>
             animateScroll.scrollToTop({
               duration: 20,
@@ -16,7 +18,7 @@ function Navigation() {
             })
           }
         >
-          Home
+          <FiHome />
         </li>
         <li
           onClick={() =>
@@ -55,6 +57,7 @@ function Navigation() {
           Contact
         </li>
         <li
+          className="resume"
           onClick={() =>
             scroller.scrollTo("myScrollToElement", {
               duration: 20,
@@ -64,11 +67,18 @@ function Navigation() {
             })
           }
         >
-          Resume
+          {ResumeLink}
         </li>
       </ul>
     </nav>
   );
 }
+
+const ResumeLink = (
+  <a href="/files/Resume.pdf" target="_blank">
+    {" "}
+    Resume
+  </a>
+);
 
 export default Navigation;

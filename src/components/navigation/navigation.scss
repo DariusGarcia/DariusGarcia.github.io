@@ -35,8 +35,33 @@ li {
 
 }
 
+li:hover {
+    transform: scale(.98);
+    color: #84a98c;
+}
+
+.home-icon {
+    display: flex;
+    align-self: inline;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.home-icon:hover {
+    transform: scale(.95, .95);
+}
+
+.resume a{
+    text-decoration: none ;
+    color: white; 
+}
+
+a:hover {
+    color: #84a98c;
+}
 @media (max-width: 600px) {
     .header-container {
+        height: 85px;
         justify-content: center;
         place-content: center;
         align-items: center;
@@ -44,5 +69,12 @@ li {
     .nav-list {
         margin-right: 0;
         place-content: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    li {
+        font-size: 1rem;
     }
 }
