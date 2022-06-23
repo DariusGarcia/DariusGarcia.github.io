@@ -2,6 +2,9 @@ import React from "react";
 import "./contact.scss";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
+import * as Scroll from "react-scroll";
+
+let Element = Scroll.Element;
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -54,30 +57,32 @@ const handleSubmit = (e) => {
 
 function Contact() {
   return (
-    <div className="form-container">
-      <form onSubmit={handleSubmit} className="add">
-        <h1 className="contact-form-h1">Contact Me</h1>
-        {/* <h5 className="replying-shortly">I will be replying shortly!</h5> */}
+    <Element name="contact">
+      <div className="form-container">
+        <form onSubmit={handleSubmit} className="add">
+          <h1 className="contact-form-h1">Contact Me</h1>
+          {/* <h5 className="replying-shortly">I will be replying shortly!</h5> */}
 
-        <label className="form-headings" htmlFor="name">
-          Name
-        </label>
-        <input type="text" name="name" placeholder="Name" required />
+          <label className="form-headings" htmlFor="name">
+            Name
+          </label>
+          <input type="text" name="name" placeholder="Name" required />
 
-        <label className="form-headings">Email</label>
-        <input placeholder="Email" type="text" name="email" required />
+          <label className="form-headings">Email</label>
+          <input placeholder="Email" type="text" name="email" required />
 
-        <label className="form-headings">Message</label>
-        <textarea
-          placeholder="Message"
-          type="text"
-          name="message"
-          required
-        ></textarea>
+          <label className="form-headings">Message</label>
+          <textarea
+            placeholder="Message"
+            type="text"
+            name="message"
+            required
+          ></textarea>
 
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </Element>
   );
 }
 

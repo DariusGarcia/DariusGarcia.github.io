@@ -1,5 +1,5 @@
 import "./App.scss";
-import Header from "./components/header/header";
+import Navigation from "./components/navigation/navigation";
 import Intro from "./components/Intro/intro";
 import About from "./components/About/about";
 import Projects from "./components/Projects/projects";
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <Header />
+        <Navigation />
       </div>
       <div className="body-about">
         <Intro />

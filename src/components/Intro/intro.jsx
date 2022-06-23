@@ -1,8 +1,12 @@
 import "./intro.scss";
+import * as Scroll from "react-scroll";
+
+let Element = Scroll.Element;
 
 function Intro() {
   return (
-    <div className="intro-container">
+    <Element name="intro">
+    <div className="intro-container" name="intro">
       <div className="intro">
       <h2 id="hey">Hey! I'm </h2>
       </div>
@@ -15,6 +19,7 @@ function Intro() {
       </p>
       
     </div>
+    </Element>
   );
 }
 
