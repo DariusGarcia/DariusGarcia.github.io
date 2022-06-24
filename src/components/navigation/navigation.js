@@ -34,7 +34,7 @@ function Navigation() {
         </li>
         <li
           onClick={() =>
-            scroller.scrollTo("projects", {
+            scroller.scrollTo("tech", {
               duration: 20,
               delay: 0,
               smooth: true,
@@ -42,8 +42,21 @@ function Navigation() {
             })
           }
         >
+          Skills
+        </li>
+        <li
+          onClick={() =>
+            scroller.scrollTo("projects", {
+              duration: 20,
+              delay: 0,
+              smooth: true,
+              offset: -115,
+            })
+          }
+        >
           Projects
         </li>
+
         <li
           onClick={() =>
             scroller.scrollTo("contact", {

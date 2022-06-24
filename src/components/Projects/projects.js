@@ -1,6 +1,8 @@
 import "./projects.scss";
 import * as Scroll from "react-scroll";
+import { DiGithubBadge } from "react-icons/di";
 
+// used for navigation click to scroll to element
 let Element = Scroll.Element;
 
 function Projects() {
@@ -8,6 +10,7 @@ function Projects() {
     <Element name="projects">
       <div className="projects-container-component">
         <h1 className="projects-title">Projects</h1>
+
         {/* individual project section */}
         <section className="card-list">
           <article className="card">
@@ -18,11 +21,32 @@ function Projects() {
                 S&P500 index to their own personal watch list.
               </p>
             </header>
+            <p className="tech-used">
+              Tech: React, Javascript, Firebase Auth, REST API, HTML/CSS
+            </p>
             <a
               className="github-repo-links"
               href="https://dariusgarcia.github.io/BullBear"
             >
-              Link to BullBear
+              <DiGithubBadge className="gh-badge" /> Link to BullBear
+            </a>
+          </article>
+          <article className="card">
+            <header className="card-header">
+              <h1>Favorite Classes</h1>
+              <p className="projects-body-text">
+                React web app that let users add their favorite UCI courses to a
+                list. Utilizes GraphQL and PeterPortal API.
+              </p>
+            </header>
+            <p className="tech-used">
+              Tech: React, Javascript, Firebase Firestore, GraphQL, HTML/CSS
+            </p>
+            <a
+              className="github-repo-links"
+              href="https://dariusgarcia.github.io/favorite-classes"
+            >
+              <DiGithubBadge className="gh-badge" /> Link to Favorite Classes
             </a>
           </article>
 
@@ -34,28 +58,17 @@ function Projects() {
                 but uses Back4App as its backend.
               </p>
             </header>
+            <p className="tech-used">
+              Tech: Kotlin, Android, REST API, Back4App backend, Git
+            </p>
             <a
               className="github-repo-links"
               href="https://github.com/dariusgarcia/Instapic"
             >
-              Link to Instapic
+              <DiGithubBadge className="gh-badge" /> Link to Instapic
             </a>
           </article>
-          <article className="card">
-            <header className="card-header">
-              <h1>Favorite Classes</h1>
-              <p className="projects-body-text">
-                React web app that let users add their favorite UCI courses to a
-                list. Utilizes GraphQL and PeterPortal API.
-              </p>
-            </header>
-            <a
-              className="github-repo-links"
-              href="https://dariusgarcia.github.io/favorite-classes"
-            >
-              Link to Favorite Classes
-            </a>
-          </article>
+
           <article className="card">
             <header className="card-header">
               <h1>Tweeter</h1>
@@ -65,11 +78,12 @@ function Projects() {
                 API.
               </p>
             </header>
+            <p className="tech-used">Tech: Kotlin, Android, REST API, Git</p>
             <a
               className="github-repo-links"
               href="https://github.com/dariusgarcia/tweeter"
             >
-              Link to Tweeter
+              <DiGithubBadge className="gh-badge" /> Link to Tweeter
             </a>
           </article>
           <article className="card">
@@ -80,11 +94,12 @@ function Projects() {
                 [The Movie Database API]
               </p>
             </header>
+            <p className="tech-used">Tech: Kotlin, Android, REST API, git</p>
             <a
               className="github-repo-links"
               href="https://github.com/dariusgarcia/flixter"
             >
-              Link to Flixter
+              <DiGithubBadge className="gh-badge" /> Link to Flixter
             </a>
           </article>
         </section>

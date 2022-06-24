@@ -29,6 +29,7 @@
     background-color: utils.$secondary-color;
     color: white;
     
+    
 }
 
 .card {
@@ -39,10 +40,16 @@
     padding: 1.3rem;
     border-radius: 45px;
     background: utils.$dark-grey;
-    box-shadow: 10px 10px 15px rgb(9, 10, 17);
-    border: 1px solid black;
+    box-shadow: 7px 7px 15px rgb(9, 10, 17);
 }
 
+.tech-used {
+    display: flex;
+    align-self: flex-start;
+    padding-top: 1rem;
+    font-size: .90rem;
+    word-spacing: 2px;
+}
 .card:nth-child(3n) {
     line-break: auto;
 }
@@ -59,10 +66,19 @@
 .github-repo-links {
     display: flex;
     align-self: flex-start;
+    align-items: center;
     margin-top: 1rem;
+    color: rgb(161, 161, 161);
+    
+
+    .gh-badge {
+        margin-right: 5px;
+    }
+
 }
 .card a:hover {
-    color: utils.$links-hover;
+    color: white;
+    transform: scale(.99);
 }
 
 .card-header>p {
@@ -88,14 +104,7 @@
     -webkit-text-fill-color: transparent;
 }
 
-.card-header h1:hover {
-    background: white;
-    text-shadow: none;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: default;
-}
+
 
 .projects h1:hover {
     background: white;
@@ -130,26 +139,33 @@ span {
     color: black;
 }
 
-#crypto-gif {
-    height: 100px;
-}
-
 // ----------------------------------------------------------------
 // Media queries for mobile devices
 // ----------------------------------------------------------------
 
+
 @media (min-width: 1201px) {
     .projects-container-component {
         margin-bottom: 8rem;
+
+        .card {
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+            
+        }
     }
 }
 @media (max-width: 1200px) {
+    .card {
+        margin-bottom: .8rem;
+    }
     .card-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         justify-content: space-evenly;
         width: 90%;
         margin-bottom: 8rem;
+        
     }
 }
 

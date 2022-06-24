@@ -60,7 +60,7 @@ textarea:focus {
   padding: 20px;
   margin-top: 10px;
   border-radius: 15px;
-  background-color: #1597DD;
+  background-color: rgb(161, 161, 161);;
   transition: 0.2s ease-in-out;
   font-weight: 500;
   font-size: 20px;
@@ -69,7 +69,7 @@ textarea:focus {
 }
 
 .add>button:hover {
-  background-color: #41B6E6;
+  background-color: #306ab4;
 }
 
 .contact-form-h1 {
@@ -78,13 +78,17 @@ textarea:focus {
 }
 
 .form-headings {
-  color: utils.$primary-color !important;
+  color: white !important;
 }
 
 .replying-shortly {
   padding: 0 0 15px 0;
   color: white;
 }
+
+// ----------------------------------------------------------------
+// media queries for mobile devices
+//-----------------------------------------------------------------
 
 @media (max-width: 415px) {
   .form-container {
@@ -95,6 +99,11 @@ textarea:focus {
     @include flex-layout();
     padding: 1rem; 
     width: 90%;
+    height: 100%;
+
+    button {
+      margin-bottom: 1rem;
+    }
   }
 }
 

@@ -25,7 +25,6 @@ function App() {
       <div className="body-about">
         <Projects />
       </div>
-
       <div className="body-about">
         <Contact />
       </div>
