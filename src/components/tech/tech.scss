@@ -33,6 +33,7 @@
         color: utils.$primary-color;
         cursor: default;
     }
+
     img {
         display: flex;
         margin-bottom: 15px;
@@ -52,7 +53,8 @@
 
 @media (max-width: 800px) {
     .tech-stack {
-        grid: repeat(3, 150px) / auto-flow 120px;    
-
+        grid: repeat(3, 150px) / auto-flow 120px;
+        column-gap: 1rem; 
+        row-gap: 1rem;   
     }
 }
