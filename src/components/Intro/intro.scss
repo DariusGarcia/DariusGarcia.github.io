@@ -12,7 +12,7 @@
 .intro-container {
     @include flex-layout();
     flex-direction: column;
-    min-height: 60vh;
+    min-height: 95vh;
     width: 100%;
     cursor: default;
 }
@@ -26,7 +26,7 @@ flex-direction: column;
 }
 
 #hey {
-    color: utils.$primary-color;
+    color: white;
     letter-spacing: .1em;
     margin-left: 4px;
     margin-top: 12rem;
@@ -40,9 +40,9 @@ flex-direction: column;
     padding: 0;
     left: 0;
     margin: 0;
-    font-size: 4rem;
+    font-size: 3.7rem;
     letter-spacing: .06em;
-    color: utils.$name;
+    color: utils.$primary-color;
     font-family: utils.$font-family;
 }
 
@@ -79,7 +79,7 @@ a {
         width: 100%;
     }
     .intro-message {
-        width: 70%;
+        width: 44%;
     }
 }
 
@@ -110,7 +110,7 @@ a {
     
     #name {
         font-size: 3rem;
-        color: white;
+        color: utils.$primary-color;
         ;
     }
     .intro-message {

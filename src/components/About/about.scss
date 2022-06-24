@@ -30,21 +30,14 @@
     color: #ffffff;
 }
 
+// ----------------------------------------------------------------
+// Media queries for mobile devices
+// ----------------------------------------------------------------
+
 @media (max-width: 428px) {
     .about-me {
         margin-bottom: 1rem;
     }
-    .about-me-message {
-        width: 100%;
-        font-size: 1rem;
-    }
-}
-@media (max-width: 415px) {
-    .about-container-component {
-        padding: 1rem;
-        margin-bottom: 8rem;
-    }
-
     .about-me-message {
         width: 100%;
         font-size: 1rem;
@@ -56,5 +49,17 @@
         width: 100%;
         padding: 3rem;
         margin-bottom: 8rem;
+    }
+}
+
+@media (max-width: 415px) {
+    .about-container-component {
+        padding: 1rem;
+        margin-bottom: 8rem;
+    }
+
+    .about-me-message {
+        width: 100%;
+        font-size: 1rem;
     }
 }

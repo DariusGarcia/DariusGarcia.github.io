@@ -8,7 +8,7 @@ function Projects() {
     <Element name="projects">
       <div className="projects-container-component">
         <h1 className="projects-title">Projects</h1>
-
+        {/* individual project section */}
         <section className="card-list">
           <article className="card">
             <header className="card-header">

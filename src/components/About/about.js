@@ -10,16 +10,16 @@ function About() {
         <h1 className="about-me">About Me</h1>
         <div>
           <p className="about-me-message">
-            I'm a recent UC Irvine graduate with a degree in Business Economics.
-            I'm a self-taught front-end developer that is driven to uncover the
-            "why" in how things work.
+            I'm a recent UC Irvine graduate with a B.A. degree in Business
+            Economics. I'm not afraid of failure as that's where <i>true</i>{" "}
+            growth flourishes. I'm highly motivated and a fast learner.
           </p>
           <br></br>
           <p className="about-me-message">
             I found a passion for programming due to having to think outside the
             box for solving various real world problems and being able to let my
             creativity run freely. I'm always trying to learn new technologies
-            to further advance my capabilities to see where my creativity leads
+            to further advance my capabilities to see where my imagination leads
             me.
           </p>
           <br></br>
@@ -30,7 +30,7 @@ function About() {
             rather try to seek comfort in embracing the <i>unknown</i> to be
             able to shed light on new solutions. I'm a problem solver that wants
             to utilize my skills to help other people and to make the world a
-            better place for all!
+            better place for all.
           </p>
         </div>
       </div>

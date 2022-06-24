@@ -134,6 +134,10 @@ span {
     height: 100px;
 }
 
+// ----------------------------------------------------------------
+// Media queries for mobile devices
+// ----------------------------------------------------------------
+
 @media (min-width: 1201px) {
     .projects-container-component {
         margin-bottom: 8rem;

@@ -12,13 +12,12 @@ function Intro() {
           <h2 id="hey"> Hey! I'm </h2>
           <h1 id="name">Darius Garcia.</h1>
         <p className="intro-message">
-          Passionate self-starter interested in front-end web development. Looking
-          to leverage my Business Economic analytical skills to not only be a
-          problem solver, but also a problem finder.
+            I'm a front-end developer that is driven to uncover the
+            "why" in how things work. I'm looking to contribute to 
+            interesting projects that will make a meaningful impact on people.
         </p>
           </div>
       </header>
-      
     </div>
     </Element>
   );

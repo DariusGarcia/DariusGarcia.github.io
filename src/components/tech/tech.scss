@@ -1,0 +1,58 @@
+@use '../../utils';
+
+@mixin flex-layout() {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    position: relative;
+}
+
+.tech-container {
+    @include flex-layout();
+    flex-direction: column; ;
+    min-height: 30vh;
+    margin-bottom: 8rem;
+}
+#technologies {
+    color: utils.$primary-color;
+}
+
+.tech-stack {
+    display: grid;
+    grid: repeat(2, 200px) / auto-flow 150px;    
+}
+
+.tech-icons  {
+    @include flex-layout();
+    flex-direction: column;
+    margin-top: 2rem;
+    color: white;
+    padding: 1rem;
+
+    h4:hover {
+        color: utils.$primary-color;
+        cursor: default;
+    }
+    img {
+        display: flex;
+        margin-bottom: 15px;
+        padding: 1rem;
+        background-color: utils.$dark-grey;
+        border-radius: 15px;
+    }
+
+    img:hover {
+        box-shadow: 3px 3px 15px rgb(9, 10, 17);
+    }
+}
+
+// ----------------------------------------------------------------
+// Media queries for mobile devices 
+// ----------------------------------------------------------------
+
+@media (max-width: 800px) {
+    .tech-stack {
+        grid: repeat(3, 150px) / auto-flow 120px;    
+
+    }
+}
