@@ -10,19 +10,47 @@
 }
 
 .intro-container {
-    @include flex-layout();
-    flex-direction: column;
-    min-height: 95vh;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    min-height: 100vh;
     width: 100%;
     cursor: default;
 }
 
+.spline-person {
+    position: absolute;
+    cursor: grab;
+    @media (max-width: 1024px) {
+        transform: scale(.8), translateX(200px);
+    }
+    @media (max-width: 416px) {
+        transform: scale(.9px), translateX(400px);
+        height: 0;
+    }
+}
 .intro-header {
 @include flex-layout();
 flex-direction: column;
     place-items: center;
+    width: 30vw;
+    // margin-top: 10rem;
+    margin-left: 2rem;
+    height: 100%;
+
+    
     // align-items: flex-start;
     // justify-content: flex-start;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    place-content: flex-start !important;
+    width: 100%;
+    height: 10vh !important;
 }
 
 #hey {
@@ -36,14 +64,18 @@ flex-direction: column;
 
 
 #name {
-    width: auto;
+    width: 100%;
     padding: 0;
+
     left: 0;
     margin: 0;
-    font-size: 3.7rem;
+    font-size: 3.3rem;
     letter-spacing: .06em;
     color: utils.$primary-color;
     font-family: utils.$font-family;
+    @media (max-width: 1024px) {
+        font-size: 2rem;
+    }
 }
 
 #name:hover {
@@ -54,13 +86,16 @@ flex-direction: column;
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    // width: 100% !important;
     margin-left: 4px;
-    min-height: 50vh !important;
+    // min-height: 50vh !important;
     font-size: 1.2rem;
     word-spacing: 1px;
     letter-spacing: 1px;
     color: rgb(161, 161, 161);
+    @media (max-width: 1024px) {
+        font-size: 1rem;
+    }
 }
 
 
@@ -75,22 +110,16 @@ a {
 // ----------------------------------------------------------------
 
 @media (min-width: 1024px) {
-    .intro-header {
-        width: 100%;
-    }
     .intro-message {
         width: 44%;
     }
 }
 
-
 @media (min-width: 500px) and (max-width: 999px) {
     .intro-header {
         width: 70%;
     }
-    .intro-message {
-        width: 100%;
-    }
+   
 }
 @media (min-width: 1000px) {
     .intro-header {
@@ -99,9 +128,15 @@ a {
 }
 
 @media (max-width: 663px) {
+    .intro-container {
+        margin-bottom: 26rem !important;
+    }
+
+    .spline-person {
+        transform: scale(.2), translateX(20000px);
+    }
     .intro-header {
-        @include flex-layout();
-        align-self: center !important;
+        // @include flex-layout();
         margin-left: 1rem;
     }
     #hey {
@@ -109,7 +144,7 @@ a {
     }
     
     #name {
-        font-size: 3rem;
+        font-size: 2rem;
         color: utils.$primary-color;
         ;
     }
@@ -120,37 +155,32 @@ a {
 }
 
 @media (max-width: 428px) {
-    .intro-container {
-        margin-top: 5rem;
+    .spline-person {
+        margin-top: 22rem;
     }
- 
 }
 
 @media (max-width: 415px) {
-    .intro-container {
-        position: relative;
-        height: 10vh;
-    }
-    .intro {
-        // margin-top: 12rem;
+    .intro-header {
+        width: 80%;
     }
     #hey {
         display: flex ;
         justify-items: flex-start;
         align-self: flex-start ;
-        margin-left: 1.1rem;
+        // margin-left: 1.1rem;
 }
     #name {
-        font-size: 3rem;
+        font-size: 2.5rem;
         display: flex;
-        align-self: flex-start;
-        margin-left: 1rem;
+        align-items: flex-start;
+        // margin-left: 1rem;
     }
 
     .intro-message {
         width: 90%;
         font-size: 1rem;
-        margin-left: 1.1rem;
+        // margin-left: 1.1rem;
     }
 }
 

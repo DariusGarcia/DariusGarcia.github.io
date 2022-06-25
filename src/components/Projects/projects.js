@@ -1,19 +1,58 @@
 import "./projects.scss";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 import * as Scroll from "react-scroll";
 import { DiGithubBadge } from "react-icons/di";
+import {
+  controlVariant1,
+  controlVariant2,
+  controlVariant3,
+  controlVariant4,
+  controlVariant5,
+  fadeIn,
+  openSpring,
+  closeSpring,
+} from "../../utils/utils";
 
 // used for navigation click to scroll to element
 let Element = Scroll.Element;
 
 function Projects() {
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
-    <Element name="projects">
+    <motion.Element name="projects">
       <div className="projects-container-component">
-        <h1 className="projects-title">Projects</h1>
+        <motion.h1
+          className="projects-title"
+          ref={ref}
+          variant={fadeIn}
+          animate={control}
+          initial="hidden"
+          transition={{ ease: "easeOut", duration: 5 }}
+        >
+          Projects
+        </motion.h1>
 
         {/* individual project section */}
         <section className="card-list">
-          <article className="card">
+          <motion.article
+            className="card"
+            ref={ref}
+            variants={fadeIn}
+            initial="hidden"
+            animate={control}
+          >
             <header className="card-header">
               <h1>BullBear</h1>
               <p className="projects-body-text">
@@ -30,8 +69,14 @@ function Projects() {
             >
               <DiGithubBadge className="gh-badge" /> Link to BullBear
             </a>
-          </article>
-          <article className="card">
+          </motion.article>
+          <motion.article
+            className="card"
+            ref={ref}
+            variants={controlVariant2}
+            initial="hidden"
+            animate={control}
+          >
             <header className="card-header">
               <h1>Favorite Classes</h1>
               <p className="projects-body-text">
@@ -48,9 +93,15 @@ function Projects() {
             >
               <DiGithubBadge className="gh-badge" /> Link to Favorite Classes
             </a>
-          </article>
+          </motion.article>
 
-          <article className="card">
+          <motion.article
+            className="card"
+            ref={ref}
+            variants={controlVariant3}
+            initial="hidden"
+            animate={control}
+          >
             <header className="card-header">
               <h1>Instapic</h1>
               <p className="projects-body-text">
@@ -67,9 +118,15 @@ function Projects() {
             >
               <DiGithubBadge className="gh-badge" /> Link to Instapic
             </a>
-          </article>
+          </motion.article>
 
-          <article className="card">
+          <motion.article
+            className="card"
+            ref={ref}
+            variants={controlVariant4}
+            initial="hidden"
+            animate={control}
+          >
             <header className="card-header">
               <h1>Tweeter</h1>
               <p className="projects-body-text">
@@ -85,8 +142,14 @@ function Projects() {
             >
               <DiGithubBadge className="gh-badge" /> Link to Tweeter
             </a>
-          </article>
-          <article className="card">
+          </motion.article>
+          <motion.article
+            className="card"
+            ref={ref}
+            variants={controlVariant5}
+            initial="hidden"
+            animate={control}
+          >
             <header className="card-header">
               <h1>Flixter</h1>
               <p className="projects-body-text">
@@ -101,10 +164,10 @@ function Projects() {
             >
               <DiGithubBadge className="gh-badge" /> Link to Flixter
             </a>
-          </article>
+          </motion.article>
         </section>
       </div>
-    </Element>
+    </motion.Element>
   );
 }
 

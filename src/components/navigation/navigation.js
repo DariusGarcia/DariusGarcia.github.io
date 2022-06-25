@@ -56,7 +56,6 @@ function Navigation() {
         >
           Projects
         </li>
-
         <li
           onClick={() =>
             scroller.scrollTo("contact", {

@@ -1,14 +1,20 @@
 import "./intro.scss";
 import * as Scroll from "react-scroll";
+import Spline from '@splinetool/react-spline';
+
 
 let Element = Scroll.Element;
 
 function Intro() {
   return (
     <Element name="intro">
+      
     <div className="intro-container" name="intro">
+
+    <Spline className="spline-person" scene="https://prod.spline.design/jM7iJtkNdHonXjTv/scene.splinecode" />
+    {/* <Spline className="spline-person" scene="https://prod.spline.design/jM7iJtkNdHonXjTv/scene.splinecode" /> */}
       <header className="intro-header">
-        <div className="intro-conent">
+        <div className="intro-content">
           <h2 id="hey"> Hey! I'm </h2>
           <h1 id="name">Darius Garcia.</h1>
         <p className="intro-message">
@@ -18,7 +24,9 @@ function Intro() {
         </p>
           </div>
       </header>
-    </div>
+
+      {/* <Spline scene="https://prod.spline.design/ZFZezPA5-N5T1wzp/scene.splinecode" /> */}
+      </div>
     </Element>
   );
 }
