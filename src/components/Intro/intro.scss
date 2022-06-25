@@ -24,10 +24,7 @@
     @media (max-width: 1024px) {
         transform: scale(.8), translateX(200px);
     }
-    @media (max-width: 416px) {
-        transform: scale(.9px), translateX(400px);
-        height: 100%;
-    }
+   
 }
 .intro-header {
 @include flex-layout();
