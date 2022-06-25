@@ -26,7 +26,7 @@
     }
     @media (max-width: 416px) {
         transform: scale(.9px), translateX(400px);
-        height: 0;
+        height: 100%;
     }
 }
 .intro-header {
@@ -129,7 +129,7 @@ a {
 
 @media (max-width: 663px) {
     .intro-container {
-        margin-bottom: 18rem !important;
+        margin-bottom: 26rem !important;
         overflow: hidden;
         overflow-x: hidden;
     }
