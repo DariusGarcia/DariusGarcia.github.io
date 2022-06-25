@@ -110,30 +110,34 @@ a {
 // ----------------------------------------------------------------
 
 @media (min-width: 1024px) {
-    .intro-message {
-        width: 44%;
-    }
 }
 
-@media (min-width: 500px) and (max-width: 999px) {
+@media  (max-width: 999px) {
     .intro-header {
         width: 70%;
     }
    
 }
-@media (min-width: 1000px) {
-    .intro-header {
-        width: 70%;
+@media (max-width: 1000px) {
+    .spline-person {
+        margin-top: 8rem;
+    }
+    .intro-message {
+        width: 40%;
     }
 }
 
 @media (max-width: 663px) {
     .intro-container {
-        margin-bottom: 26rem !important;
+        margin-bottom: 18rem !important;
+        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .spline-person {
-        transform: scale(.2), translateX(20000px);
+        transform: scale(.4) translateX(-1650px);
+        height: 100%;
+        overflow-x: hidden;
     }
     .intro-header {
         // @include flex-layout();
