@@ -31,9 +31,10 @@ function Projects() {
   }, [control, inView]);
 
   return (
-    <motion.Element name="projects">
+    // <motion.Element name="projects">
+    <Element name="projects">
       <div className="projects-container-component">
-        <motion.h1
+        <h1
           className="projects-title"
           ref={ref}
           variant={fadeIn}
@@ -42,11 +43,11 @@ function Projects() {
           transition={{ ease: "easeOut", duration: 5 }}
         >
           Projects
-        </motion.h1>
+        </h1>
 
         {/* individual project section */}
         <section className="card-list">
-          <motion.article
+          <article
             className="card"
             ref={ref}
             variants={fadeIn}
@@ -69,8 +70,8 @@ function Projects() {
             >
               <DiGithubBadge className="gh-badge" /> Link to BullBear
             </a>
-          </motion.article>
-          <motion.article
+          </article>
+          <article
             className="card"
             ref={ref}
             variants={controlVariant2}
@@ -93,9 +94,9 @@ function Projects() {
             >
               <DiGithubBadge className="gh-badge" /> Link to Favorite Classes
             </a>
-          </motion.article>
+          </article>
 
-          <motion.article
+          <article
             className="card"
             ref={ref}
             variants={controlVariant3}
@@ -118,9 +119,9 @@ function Projects() {
             >
               <DiGithubBadge className="gh-badge" /> Link to Instapic
             </a>
-          </motion.article>
+          </article>
 
-          <motion.article
+          <article
             className="card"
             ref={ref}
             variants={controlVariant4}
@@ -142,8 +143,8 @@ function Projects() {
             >
               <DiGithubBadge className="gh-badge" /> Link to Tweeter
             </a>
-          </motion.article>
-          <motion.article
+          </article>
+          <article
             className="card"
             ref={ref}
             variants={controlVariant5}
@@ -164,10 +165,10 @@ function Projects() {
             >
               <DiGithubBadge className="gh-badge" /> Link to Flixter
             </a>
-          </motion.article>
+          </article>
         </section>
       </div>
-    </motion.Element>
+    </Element>
   );
 }
 
