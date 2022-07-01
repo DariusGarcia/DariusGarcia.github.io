@@ -9,6 +9,8 @@
 
 .header-container {
     position: fixed;
+    display: flex;
+    justify-content: space-between;
     top: 0;
     margin: 0;
     padding: 0;
@@ -18,6 +20,18 @@
     background-color: utils.$dark-grey;
 }
 
+.nav-home-icons-container { 
+    display: flex;
+    align-items: center;
+}
+.nav-home-list {
+    @include flex-layout();
+    // place-content: end;
+    height: 100%;
+    margin-left: 2rem;
+    padding: .5rem;
+    gap: 1rem;
+}
 .nav-list {
     @include flex-layout();
     place-content: end;

@@ -6,6 +6,7 @@ import Tech from "./components/tech/tech";
 import Projects from "./components/projects/projects";
 import Socials from "./components/socials/socials";
 import Contact from "./components/contact/contact";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
       </div>
       <div className="body-about">
         <Contact />
+      </div>
+      <div className="body-about">
+        <Footer />
       </div>
     </div>
   );

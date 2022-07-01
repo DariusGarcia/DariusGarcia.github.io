@@ -10,6 +10,7 @@
 .form-container {
   @include flex-layout();
   margin-bottom: 5rem;
+  
 }
 
 .add {
@@ -17,6 +18,7 @@
   flex-direction: column;
   width: 50%;
   height: 75vh;
+  padding: 1.5rem;
   border-radius: 45px;
   background-color: utils.$dark-grey;
 }
@@ -90,6 +92,7 @@ textarea:focus {
 // media queries for mobile devices
 //-----------------------------------------------------------------
 
+
 @media (max-width: 415px) {
   .form-container {
     @include flex-layout();
@@ -97,9 +100,9 @@ textarea:focus {
 
   .add {
     @include flex-layout();
-    padding: 1rem; 
     width: 90%;
     height: 100%;
+    padding: 1.5rem;
 
     button {
       margin-bottom: 1rem;
