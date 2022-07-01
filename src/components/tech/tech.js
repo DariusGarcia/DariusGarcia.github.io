@@ -17,7 +17,7 @@ function Tech() {
           </article>
           <article className="tech-icons">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-            <h4>Javascript</h4>
+            <h4>Javascript/ES6</h4>
           </article>
           <article className="tech-icons">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
