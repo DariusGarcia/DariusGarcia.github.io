@@ -1,5 +1,5 @@
-@use '../../utils';
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@use "../../utils";
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 @mixin flex-layout() {
     display: flex;
@@ -20,7 +20,7 @@
     background-color: utils.$dark-grey;
 }
 
-.nav-home-icons-container { 
+.nav-home-icons-container {
     display: flex;
     align-items: center;
 }
@@ -29,7 +29,7 @@
     // place-content: end;
     height: 100%;
     margin-left: 2rem;
-    padding: .5rem;
+    padding: 0.5rem;
     gap: 1rem;
 }
 .nav-list {
@@ -37,7 +37,7 @@
     place-content: end;
     height: 100%;
     margin-right: 2rem;
-    padding: .5rem;
+    padding: 0.5rem;
     gap: 1rem;
     list-style-type: none;
 }
@@ -51,10 +51,12 @@ li {
 }
 
 li:hover {
-    transform: scale(.98);
+    transform: scale(0.98);
     color: utils.$primary-color;
 }
 
+.nav-darius-h1 {
+}
 .home-icon {
     display: flex;
     align-self: inline;
@@ -63,12 +65,12 @@ li:hover {
 }
 
 .home-icon:hover {
-    transform: scale(.95, .95);
+    transform: scale(0.95, 0.95);
 }
 
-.resume a{
-    text-decoration: none ;
-    color: white; 
+.resume a {
+    text-decoration: none;
+    color: white;
 }
 
 a:hover {
@@ -83,6 +85,7 @@ a:hover {
     .header-container {
         @include flex-layout();
         height: 85px;
+        justify-content: space-evenly;
     }
     .nav-list {
         @include flex-layout();
@@ -90,6 +93,10 @@ a:hover {
     }
 
     li {
-        font-size: .95rem;
+        font-size: 0.95rem;
+    }
+
+    .nav-darius-h1 {
+        visibility: hidden;
     }
 }
